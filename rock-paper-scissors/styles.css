@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+
+section#game {
+    display: none;
+}
+
+section#game button {
+    margin-right: 2rem; 
+}
+
+section#game button:hover {
+    background-color: aqua;
+    transition: 2s;
+}
+
+button#start {
+    margin: 2rem 0 0 2rem;
+}
+
+div#container {
+    display: flex;
+    align-items: center;
+    margin: 3rem;
+}
+
+div#container button {
+    padding: 4rem;
+    font-size: 2rem;
+}
+
+button#rock {
+    color: white;
+    background-color: gray;
+}
+
+button#paper {
+    color: black;
+    background-color: rgb(188, 150, 79);
+    border-radius: 10px;
+}
+
+button#scissors {
+    color: white;
+    background-color: firebrick;
+}

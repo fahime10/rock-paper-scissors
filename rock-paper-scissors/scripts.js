@@ -1,6 +1,13 @@
 const choices = ["rock", "paper", "scissors"];
 const roundWinner = [];
 
+function startGame() {
+    document.getElementById("game").style.display = "block";
+    document.getElementById("start").style.display = "none";
+}
+
+document.getElementById("start").addEventListener("click", startGame);
+
 function game() {
     for (let i = 1; i <= 5; i++) {
         playRound();
@@ -21,22 +28,22 @@ function playRound() {
 }
 
 function getPlayerChoice() {
-    let input = prompt("Type Rock, Paper or Scissors");
+    // let input = prompt("Type Rock, Paper or Scissors");
 
-    while (input == null) {
-        input = prompt("Type Rock, Paper or Scissors");
-    }
+    // while (input == null) {
+    //     input = prompt("Type Rock, Paper or Scissors");
+    // }
 
-    input = input.toLowerCase();
-    let check = validateInput(input);
+    // input = input.toLowerCase();
+    // let check = validateInput(input);
 
-    while (check == false) {
-        input = prompt("You must type Rock, Paper or Scissors!");
-        input = input.toLowerCase();
-        check = validateInput(input);
-    }
+    // while (check == false) {
+    //     input = prompt("You must type Rock, Paper or Scissors!");
+    //     input = input.toLowerCase();
+    //     check = validateInput(input);
+    // }
     
-    return input;
+    // return input;
 }
 
 function getComputerChoice() {
